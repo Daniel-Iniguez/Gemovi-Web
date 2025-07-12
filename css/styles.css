@@ -1,0 +1,146 @@
+/*
+    Changelog:
+    - 1.0.0 [2025-07-11] Daniel Iñiguez: Creación inicial del archivo con estilos generales, encabezado, navegación, contenido principal, secciones y pie de página.
+*/
+/* Version: 1.0.0 */
+
+/* Estilos generales */
+
+@import "tailwindcss";
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+}
+body, p, li, label, input, textarea, button {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #FFFDE7 0%, #FFD600 100%);
+}
+
+header{
+    border-bottom: none;
+    margin-inline: 0;
+}
+
+/* Estilos del encabezado */
+nav {
+    background: linear-gradient(90deg, #FFD600 0%, #222 100%);
+    color: #FFD600;
+    margin-inline: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Estilos del menú de navegación */
+nav ul{
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: #222;
+    padding-inline: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover {
+    color: #FFD600;
+    background: #222;
+    border-radius: 4px;
+}
+
+/* Estilos del contenido principal */
+main {
+    padding: 0em;
+    margin: 2rem;
+
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilos de la imagen del logo */
+.logo {
+    width: 8rem; /* Ajusta el tamaño según sea necesario */
+    margin-left: 0rem;
+}
+
+#section1 {
+    display: flex;
+    justify-content: center;
+}
+
+.div-img{
+    display: flex;
+    justify-content: center;
+    width: 95vw;
+    height: 500px;
+}
+
+.main-img {
+    object-fit: cover;
+    object-position: center;
+    margin: 1rem;
+    width: 100%;
+}
+
+#section2 { 
+    display: flex;
+    justify-content: center;
+}
+
+.section2-div1{
+    display: flex;
+    justify-content:space-between;
+    width: 95vw;
+}
+
+.section2-div1 div{
+    margin: 1rem;
+}
+
+.section2-div1-1{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.section2-div1-2{
+    width: 50%;
+    height: 200px;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.section2-div1-2 img{
+    object-fit: cover;
+    object-position: center;
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
