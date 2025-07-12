@@ -11,12 +11,6 @@ Sitio web estático para la empresa Gemovi Construcción.
   - Scroll suave entre secciones y carga dinámica de secciones desde la carpeta `pages`.
 - `pages/` - Carpeta con archivos HTML individuales para cada sección (`home.html`, `history.html`, `objective.html`, `services.html`, `contact.html`).
 
-## Cambios recientes
-
-- Se eliminó el uso de `<section>` en `index.html` y se agregó un solo `<div id="contenido-secciones">`.
-- Se implementó la carga dinámica de secciones con JavaScript desde la carpeta `pages`.
-- Se mantiene el scroll suave y la navegación por anclas.
-- Se mejoró la limpieza y mantenibilidad del código.
 
 ## Registro de cambios futuros
 
@@ -25,8 +19,7 @@ Sitio web estático para la empresa Gemovi Construcción.
 ### Ejemplo:
 - `[2025-07-11] index.html - Versión 1.0.0 - Carga dinámica de secciones y estructura simplificada.`
 
----
-### Logs y notas adicionales
+## Cambios recientes
 
-
+- [2025-07-11] css/styles.css - Versión 1.1.0 - daniel-iniguez: Restaurado el degradado amarillo en el fondo, optimización y limpieza de estilos para complementar Bootstrap.
 
