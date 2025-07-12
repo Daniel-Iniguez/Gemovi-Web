@@ -62,5 +62,15 @@ img {
     object-position: center;
 }
 
+/* Botón flotante 'Ir arriba' */
+#scrollTopBtn {
+    box-shadow: 0 2px 8px rgba(209, 12, 12, 0.2);
+    transition: background 0.3s, color 0.3s, opacity 0.3s;
+}
+#scrollTopBtn:hover {
+    color: #FFD600;
+    opacity: 0.75;
+}
+
 
 

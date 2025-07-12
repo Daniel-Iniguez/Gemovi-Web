@@ -31,3 +31,14 @@ window.addEventListener('DOMContentLoaded', () => {
         window.scrollTo(0, 0);
     }
 });
+
+
+// Mostrar/ocultar botón según scroll
+    const scrollBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+        scrollBtn.style.display = (window.scrollY > 300) ? 'block' : 'none';
+    });
+    // Scroll suave al hacer clic
+    scrollBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
