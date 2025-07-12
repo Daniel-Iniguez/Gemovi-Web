@@ -12,12 +12,22 @@ document.documentElement.style.scrollBehavior = 'smooth';
 // Cargar secciones dinámicamente en un solo contenedor
 const sections = ["home", "history", "objective", "services", "contact"];
 const container = document.getElementById("sections-content");
-sections.forEach(sec => {
-    fetch(`pages/${sec}.html`)
-        .then(res => res.text())
-        .then(html => {
-            const div = document.createElement("div");
-            div.innerHTML = html;
-            container.appendChild(div);
-        });
+
+async function loadSectionsSequentially() {
+    for (const sec of sections) {
+        const res = await fetch(`pages/${sec}.html`);
+        const html = await res.text();
+        const div = document.createElement("div");
+        div.innerHTML = html;
+        container.appendChild(div);
+    }
+}
+loadSectionsSequentially();
+
+// Evitar scroll automático por hash al cargar secciones
+window.addEventListener('DOMContentLoaded', () => {
+    if (window.location.hash) {
+        history.replaceState(null, '', window.location.pathname);
+        window.scrollTo(0, 0);
+    }
 });

@@ -1,3 +1,7 @@
+p, .lead, .card-text, label, input, textarea, button {
+    color: #222 !important;
+}
+
 /*
     Changelog:
     - 1.0.0 [2025-07-11] Daniel Iñiguez: Creación inicial del archivo con estilos generales, encabezado, navegación, contenido principal, secciones y pie de página.
@@ -13,7 +17,7 @@ body, p, li, label, input, textarea, button {
 }
 
 body {
-    background: linear-gradient(135deg, #FFFDE7 0%, #FFD600 100%);
+    background: #FFFDE7;
 }
 
 nav.navbar {
@@ -26,14 +30,18 @@ nav.navbar .navbar-brand img {
 }
 
 nav.navbar .nav-link {
-    color: #222;
+    color: rgb(14, 11, 0);
     font-weight: bold;
     transition: color 0.2s;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 nav.navbar .nav-link:hover {
-    color: #1976D2;
-    background: #222;
-    border-radius: 4px;
+    color: #FFD600;
+    background: hsl(40, 12%, 5%);
+    border-radius: 2px;
 }
 
 footer {
