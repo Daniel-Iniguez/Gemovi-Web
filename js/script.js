@@ -1,6 +1,7 @@
 /*
     Changelog:
     - 1.0.0 [2025-07-11] Daniel Iñiguez: Creación inicial del archivo con ejemplos de interactividad y scroll suave entre secciones.
+    - 1.2.0 [2025-07-12] GitHub Copilot: Agregado modo oscuro con persistencia y cambio de ícono.
 */
 // Version: 1.0.0
 
@@ -42,3 +43,23 @@ window.addEventListener('DOMContentLoaded', () => {
     scrollBtn.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+
+// Modo oscuro
+const darkModeToggle = document.getElementById('darkModeToggle');
+const darkModeIcon = document.getElementById('darkModeIcon');
+
+darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    const isDark = document.body.classList.contains('dark-mode');
+    darkModeIcon.textContent = isDark ? '☀️' : '🌙';
+    // Opcional: guardar preferencia en localStorage
+    localStorage.setItem('darkMode', isDark ? 'on' : 'off');
+});
+
+// Al cargar, aplicar preferencia guardada
+window.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('darkMode') === 'on') {
+        document.body.classList.add('dark-mode');
+        darkModeIcon.textContent = '☀️';
+    }
+});

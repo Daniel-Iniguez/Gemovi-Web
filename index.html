@@ -1,6 +1,7 @@
 <!--
     Changelog:
     - 1.0.0 [2025-07-11] Daniel Iñiguez: Creación inicial del archivo con estructura básica y metaetiquetas.
+    - 1.2.0 [2025-07-12] GitHub Copilot: Agregado botón y funcionalidad de modo oscuro en el navbar.
 -->
 <!-- Version: 1.0.0 -->
 
@@ -26,11 +27,16 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#history">Historia</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#objective">Objetivo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill" href="#home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill" href="#history">Historia</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill" href="#objective">Objetivo</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill" href="#services">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill" href="#contact">Contacto</a></li>
+                    <li class="nav-item d-flex align-items-center ms-3">
+                        <button id="darkModeToggle" class="btn btn-outline-light rounded-pill" type="button" title="Modo oscuro">
+                            <span id="darkModeIcon">🌙</span>
+                        </button>
+                    </li>
                 </ul>
             </div>
         </div>

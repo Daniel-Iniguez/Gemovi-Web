@@ -23,4 +23,5 @@ Sitio web estático para la empresa Gemovi Construcción.
 
 - [2025-07-11] css/styles.css - Versión 1.1.0 - daniel-iniguez: Restaurado el degradado amarillo en el fondo, optimización y limpieza de estilos para complementar Bootstrap.
 - [2025-07-11] Cambios visuales: Fondo principal amarillo claro, navbar con degradado amarillo-negro, textos de navbar y títulos en blanco, textos de párrafos en negro, mayor separación en los enlaces del navbar, y corrección de orden en carga dinámica de secciones.
+ - [2025-07-12] index.html, css/styles.css, js/script.js - Versión 1.2.0 - GitHub Copilot: Agregado botón y funcionalidad de modo oscuro, con persistencia de preferencia y estilos personalizados.
 
