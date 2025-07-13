@@ -98,8 +98,8 @@ body.dark-mode .card-body{
 }
 
 body.dark-mode #scrollTopBtn {
-    background: #222 !important;
-    color: #FFD600 !important;
+    background: #FFD600 !important;
+    color: #222 !important;
 }
 
 /* Botón flotante 'Ir arriba' */
